@@ -7,7 +7,7 @@ jobs:
   test:
     executor: python/python38
     steps:
-      - clone
+      - checkout
       - run: pip install -r dev-requirements.txt
       - run: tox
       - run: flake8 sendgrid_backend/
