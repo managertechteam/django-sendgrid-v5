@@ -7,8 +7,8 @@ jobs:
   test:
     executor: python38
     steps:
-      - pip install tox
-      - tox
+      - run: pip install tox
+      - run: tox
 
 workflows:
   main:
