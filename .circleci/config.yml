@@ -7,8 +7,10 @@ jobs:
   test:
     executor: python/python38
     steps:
-      - run: pip install tox
+      - clone
+      - run: pip install -r dev-requirements.txt
       - run: tox
+      - run: flake8 sendgrid_backend/
 
 workflows:
   main:
