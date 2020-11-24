@@ -6,4 +6,4 @@ orbs:
 workflows:
   main:
     jobs:
-      - tox
+      - python@1.3.0/tox
