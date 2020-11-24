@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   test:
-    executor: python38
+    executor: python/python38
     steps:
       - run: pip install tox
       - run: tox
